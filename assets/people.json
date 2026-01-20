@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Marymar Martínez",
+    "role": "Gerente de Ventas Nacional",
+    "photo": "nomad_03",
+    "phone": "5543401015",
+    "image": "assets/img/nomad_03.mp4"
+  },
+  {
+    "name": "Angel Nava",
+    "role": "KAM Nomad CDMX Poniente",
+    "photo": "nomad_04",
+    "phone": "5579681460",
+    "image": "assets/img/nomad_04.mp4"
+  },
+  {
+    "name": "Andrea Salazar",
+    "role": "KAM Nomad CDMX Sur",
+    "photo": "nomad_05",
+    "phone": "5579681304",
+    "image": "assets/img/nomad_05.mp4"
+  },
+  {
+    "name": "Claudia Jiménez Beltrán",
+    "role": "KAM Nomad GDL2",
+    "photo": "nomad_06",
+    "phone": "5554360130",
+    "image": "assets/img/nomad_06.mp4"
+  }
+]
