@@ -7,13 +7,6 @@
     "image": "assets/img/nomad_03.mp4"
   },
   {
-    "name": "Angel Nava",
-    "role": "KAM Nomad CDMX Poniente",
-    "photo": "nomad_04",
-    "phone": "5579681460",
-    "image": "assets/img/nomad_04.mp4"
-  },
-  {
     "name": "Claudia Jiménez Beltrán",
     "role": "KAM Nomad GDL2",
     "photo": "nomad_06",
@@ -26,5 +19,37 @@
     "photo": "nomad_07",
     "phone": "55 8012 6718",
     "image": "assets/img/nomad_07.mp4"
+  },
+  {
+    "name": "Alain Ramirez",
+    "role": "KAM Nomad",
+    "photo": "alain",
+    "phone": "5564822884",
+    "image": "assets/img/alain.mp4",
+    "slug": "alain"
+  },
+  {
+    "name": "Anayely Tapia",
+    "role": "KAM Nomad",
+    "photo": "anayely",
+    "phone": "5579681304",
+    "image": "assets/img/anayely.mp4",
+    "slug": "anayely"
+  },
+  {
+    "name": "Oscar Rangel",
+    "role": "KAM Nomad",
+    "photo": "oscar",
+    "phone": "5579681460",
+    "image": "assets/img/oscar.mp4",
+    "slug": "oscar"
+  },
+  {
+    "name": "Dayana Valencia",
+    "role": "KAM Nomad",
+    "photo": "dayana",
+    "phone": "5669988684",
+    "image": "assets/img/dayana.mp4",
+    "slug": "dayana"
   }
 ]

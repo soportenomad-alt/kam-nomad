@@ -14,6 +14,24 @@ function waLink(phone){
   return `https://wa.me/${MX_PREFIX}${digits}`;
 }
 
+
+function normalizeSlug(value){
+  return (value||'')
+    .toString()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g,'-')
+    .replace(/^-+|-+$/g,'');
+}
+
+function dataFromUrl(data){
+  const params = new URLSearchParams(window.location.search);
+  const selectedKam = normalizeSlug(params.get('kam'));
+  if(!selectedKam) return data;
+  const filtered = data.filter(p => normalizeSlug(p.slug || p.name) === selectedKam);
+  return filtered.length ? filtered : data;
+}
+
 function iconWhatsapp(){
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" aria-hidden="true">
     <path fill="#fff" d="M19.11 17.74c-.3-.17-1.76-.96-2.03-1.07-.27-.1-.46-.17-.66.17-.2.33-.77 1.06-.95 1.28-.17.2-.35.23-.64.1-.3-.17-1.23-.45-2.35-1.45-.86-.77-1.45-1.7-1.6-1.98-.17-.3 0-.46.14-.64.14-.14.3-.35.44-.52.14-.2.2-.33.3-.55.1-.2.05-.4-.02-.55-.07-.17-.66-1.6-.9-2.2-.23-.54-.47-.47-.66-.47h-.55c-.2 0-.54.08-.82.4-.27.33-1.06 1.04-1.06 2.57 0 1.52 1.1 2.98 1.25 3.18.17.2 2.17 3.3 5.25 4.6.73.3 1.3.5 1.74.64.73.23 1.4.2 1.93.12.59-.08 1.76-.72 2-1.43.24-.7.24-1.3.17-1.44-.07-.14-.26-.2-.56-.35z"/>
@@ -140,7 +158,8 @@ function closeModal(){
 
 async function init(){
   const res = await fetch(DATA_URL);
-  const data = await res.json();
+  const allData = await res.json();
+  const data = dataFromUrl(allData);
   buildSlides(data);
   buildGrid(data);
   goTo(0);
