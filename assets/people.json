@@ -51,5 +51,19 @@
     "phone": "5669988684",
     "image": "assets/img/dayana.mp4",
     "slug": "dayana"
+  },
+  {
+    "name": "Lizeth Vega",
+    "role": "KAM Nomad Hermosillo",
+    "phone": "6621830207",
+    "image": "assets/img/lizeth_vega.mp4",
+    "slug": "lizeth-vega"
+  },
+  {
+    "name": "Alicia Alvarado",
+    "role": "KAM Nomad Tijuana",
+    "phone": "6643992310",
+    "image": "assets/img/alicia_alvarado.mp4",
+    "slug": "alicia-alvarado"
   }
 ]
